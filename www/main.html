@@ -85,9 +85,9 @@ $(document).ajaxStart(function()
 
 
 
-$("#menu1").load("http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_menu1.php");
-$("#isinya").load("http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_main.php");
-$("#menu2").load("http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_menu2.php");
+$("#menu1").load("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_menu1.php");
+$("#isinya").load("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_main.php");
+$("#menu2").load("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_menu2.php");
 
 
 
@@ -161,7 +161,7 @@ $("#menu2").load("http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_me
 
 		//deteksi...
 		$.ajax({
-			url: "http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_deteksi.php?aksi=deteksi&hkode="+device.uuid,
+			url: "http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_deteksi.php?aksi=deteksi&hkode="+device.uuid,
 			type:$(this).attr("method"),
 			data:$(this).serialize(),
 			success:function(data){		
