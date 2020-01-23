@@ -114,7 +114,7 @@ $(document).ajaxStart(function()
     function onSuccess(position) {
 
 		$.ajax({
-			url: "http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_set_lokasi.php?aksi=ppulang&latx="+position.coords.latitude+"&laty="+position.coords.longitude,
+			url: "http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_set_lokasi.php?aksi=ppulang&latx="+position.coords.latitude+"&laty="+position.coords.longitude,
 			type:$(this).attr("method"),
 			data:$(this).serialize(),
 			success:function(data){		
@@ -132,7 +132,7 @@ $(document).ajaxStart(function()
     //
     function onError(error) {
 		$.ajax({
-			url: "http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_set_lokasi.php?aksi=error",
+			url: "http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_set_lokasi.php?aksi=error",
 			type:$(this).attr("method"),
 			data:$(this).serialize(),
 			success:function(data){					
