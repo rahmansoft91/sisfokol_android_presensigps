@@ -170,7 +170,7 @@ $("#isinya").load("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_a
 		$('#d_proses').hide()
 
 
-		$("#d_foto").load("http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_upload_profil.php?aksi=form");
+		$("#d_foto").load("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_upload_profil.php?aksi=form");
 		$('#d_foto').show()
 	    }
 
@@ -194,7 +194,7 @@ $("#isinya").load("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_a
 	    options.params = params;
 
 	    var ft = new FileTransfer();
-	    ft.upload(fileURL, encodeURI("http://192.168.1.100/sisfokol_presensigps/android_pegawai/i_upload_profil.php?aksi=simpan"), success, fail, options);
+	    ft.upload(fileURL, encodeURI("http://192.168.41.99/sisfokol_presensigps/android_pegawai/i_upload_profil.php?aksi=simpan"), success, fail, options);
 
 
 
